@@ -1,0 +1,6 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-paper text-ink font-body antialiased}
+:focus-visible{outline:3px solid #1F8A70;outline-offset:2px}
+.field{@apply w-full rounded-md border border-ink/25 bg-white px-3 py-2.5 text-base}
+.btn{@apply inline-flex items-center justify-center rounded-md bg-ink px-5 py-2.5 font-semibold text-white hover:bg-care}
+@media (prefers-reduced-motion:no-preference){.rise{animation:rise .6s ease both}@keyframes rise{from{opacity:0;transform:translateY(8px)}}}

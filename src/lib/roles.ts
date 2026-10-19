@@ -1,0 +1,2 @@
+export const ROLES = [["doctor","Doctors"],["nurse","Nurses"],["pharmacist","Pharmacists"],["lab_technician","Lab Technicians"],["receptionist","Receptionists"],["billing_executive","Billing Executives"],["ot_technician","OT Technicians"],["radiology_technician","Radiology Technicians"],["ambulance_driver","Ambulance Drivers"],["housekeeping","Housekeeping Staff"]] as const;
+export const roleLabel = (k: string) => ROLES.find((r) => r[0] === k)?.[1] ?? k;
